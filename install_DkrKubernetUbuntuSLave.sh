@@ -69,5 +69,3 @@ echo "...ATTEMPTING TO INSTALL KUBERNETES:"
          echo "then try to reinstall,[ sudo yum install -y kubelet kubeadm kubectl ]"
          fi
 
-echo "GO TO URL TO COMPLETE THE INSTALL:Instructions to install CNI PLUGIN: https://projectcalico.docs.tigera.io/getting-started/kubernetes/hardway/install-cni-plugin"
-
