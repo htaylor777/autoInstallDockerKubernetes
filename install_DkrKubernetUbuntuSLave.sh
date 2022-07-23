@@ -1,5 +1,5 @@
 #!/bin/bash
-# This is an automation script to install Docker and Kubernetes
+# This is an automation script to install Docker and Kubernetes for Slave
 # 
 #  Copyright Hilery Taylor 2022
 #
