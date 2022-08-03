@@ -49,3 +49,29 @@ chomp($zipcodes);
 foreach $zip (@zipcodeArray) {
 process($zip);
 }
+
+sub process {
+my $inzip = shift;
+chomp($inzip);
+$found = "";
+
+#$min = pop(@zipcoderanges);
+#$max = $zipcoderanges[@zipcoderanges -1];
+##print "here now: $inzip\n";
+foreach $range (@zipcoderanges) {
+
+$thismin = min(@zipcoderanges);
+$thismax = max(@zipcoderanges);
+  #print "$inzip == $range\n";
+   if ($range == $inzip){
+$found = "Restricted Zip Code $inzip found in range:  $thismin-$thismax\n";
+   }
+#print "HEY: $found\n";
+}
+#print "$found\n";
+if ($found ne "" ) {
+  print "$found\n";
+}else{
+print "No restrictions for zip code:$inzip.\n";
+}
+}
