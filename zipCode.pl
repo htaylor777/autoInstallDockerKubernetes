@@ -2,7 +2,7 @@ pipeline {
    agent any
      stages { 
         stage ('verify perl') {
-           step {
+           steps {
             sh 'perl --version'
             }
          }
